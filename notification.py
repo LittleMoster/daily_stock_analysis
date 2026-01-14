@@ -929,7 +929,7 @@ class NotificationService:
                     return '-'
                 # 匹配浮点数或整数
                 match = re.search(r'\d+(\.\d+)?', str(text))
-                return match.group(0) if match else text
+                return match.group(0) if match else '-'
 
             data = []
             for r in results:
